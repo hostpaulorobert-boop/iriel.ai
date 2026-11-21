@@ -1,0 +1,79 @@
+{
+  "$schema": "https://iriel.ai/schemas/ispace.storage.schema.json",
+  "storageType": "iSpace.Storage",
+  "version": "1.0.0",
+  "metadata": {
+    "name": "iSpace",
+    "description": "Personal digital storage space",
+    "owner": "Human",
+    "platform": "iRiel"
+  },
+  "storage": {
+    "capacity": {
+      "total": 2,
+      "unit": "TB",
+      "bytes": 2000000000000
+    },
+    "type": "personal",
+    "privacy": "private",
+    "ownership": "user",
+    "persistence": true,
+    "encryption": true
+  },
+  "content": {
+    "photos": {
+      "enabled": true,
+      "types": [
+        "images",
+        "videos",
+        "albums",
+        "camera-uploads"
+      ]
+    },
+    "files": {
+      "enabled": true,
+      "types": [
+        "documents",
+        "pdf",
+        "archives",
+        "presentations",
+        "spreadsheets",
+        other-files"
+      ]
+    },
+    "notes": {
+      "enabled": true,
+      "types": [
+        "text-notes",
+        "rich-text",
+        "voice-notes",
+        "attachments"
+      ]
+    },
+    "collections": {
+      "enabled": true,
+      "types": [
+        "folders",
+        "albums",
+        "collections",
+        "favorites"
+      ]
+    }
+  },
+  "capabilities": {
+    "upload": true,
+    "download": true,
+    "preview": true,
+    "search": true,
+    "organize": true,
+    "share": true,
+    "delete": true,
+    "restore": true
+  },
+  "access": {
+    "primaryOwner": "user",
+    "accessControl": "owner-controlled",
+    "thirdPartyAccess": "explicit-permission",
+    "aiAccess": "permission-based"
+  }
+}
